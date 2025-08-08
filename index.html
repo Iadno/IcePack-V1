@@ -1,148 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ice Pack Optimizer</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Rubik', sans-serif;
-      background: linear-gradient(to bottom, #0f0f1a, #1a002d);
-      color: #fff;
-      overflow-x: hidden;
-    }
-
-    .container {
-      max-width: 1140px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      text-align: center;
-      position: relative;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      color: #c084fc;
-      margin-bottom: 10px;
-    }
-
-    .subtitle {
-      font-size: 1.2rem;
-      color: #ccc;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #a855f7;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      margin: 10px;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #9333ea;
-    }
-
-    .features {
-      list-style: none;
-      padding: 0;
-      margin-top: 20px;
-    }
-
-    .features li {
-      padding: 10px 0;
-      font-size: 1.1rem;
-    }
-
-    .features li::before {
-      content: "✔️ ";
-      color: #22c55e;
-    }
-
-    .social-buttons {
-      margin-top: 20px;
-    }
-
-    footer {
-      margin-top: 50px;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      .btn {
-        width: 90%;
-        max-width: 320px;
-      }
-    }
-
-    /* Decorative Elements */
-    body::before, body::after {
-      content: "";
-      position: fixed;
-      z-index: -1;
-      width: 400px;
-      height: 400px;
-      border-radius: 50%;
-      filter: blur(100px);
-      opacity: 0.2;
-    }
-
-    body::before {
-      background: #9333ea;
-      top: -100px;
-      left: -100px;
-    }
-
-    body::after {
-      background: #2563eb;
-      bottom: -100px;
-      right: -100px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="background"></div>
   <div class="container">
     <header>
-      <h1>Ice Pack Optimizer</h1>
-      <p class="subtitle">Скрипт для быстрой оптимизации Windows</p>
-      <a href="/downloads/Ice%20Pack%20V1.bat" download class="btn connect">Скачать файл</a>
+      <h1 class="fade-in">Ice Pack Optimizer</h1>
+      <p class="fade-in delay-1">Скрипт для быстрой оптимизации Windows</p>
+      <a href="Ice%20Pack%20V1.bat" download class="btn fade-in delay-2">Скачать файл</a>
     </header>
 
     <main>
-      <section class="about">
-        <h2><strong>Что делает скрипт:</strong></h2>
-        <ul class="features">
-          <li>Очищает временные файлы и кэш</li>
-          <li>Закрывает ненужные процессы</li>
-          <li>Отключает автообновление Microsoft Store</li>
-          <li>Повышает производительность системы</li>
-          <li>Удаляет лог-файлы и мусор</li>
+      <section class="features fade-in delay-3">
+        <h2>Что делает скрипт:</h2>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Очищает временные файлы и кэш</li>
+          <li><i class="fas fa-check-circle"></i> Закрывает ненужные процессы</li>
+          <li><i class="fas fa-check-circle"></i> Отключает автообновление Microsoft Store</li>
+          <li><i class="fas fa-check-circle"></i> Повышает производительность системы</li>
+          <li><i class="fas fa-check-circle"></i> Удаляет лог-файлы и мусор</li>
         </ul>
       </section>
 
-      <section class="links">
-        <h2><strong>Контакты</strong></h2>
+      <section class="contacts fade-in delay-4">
+        <h2>Контакты</h2>
         <div class="social-buttons">
-          <a href="https://t.me/your_telegram" target="_blank" class="btn telegram">Telegram</a>
-          <a href="https://discord.gg/your_invite" target="_blank" class="btn discord">Discord</a>
+          <a href="https://t.me/your_telegram" target="_blank" class="btn">Telegram</a>
+          <a href="https://discord.gg/your_invite" target="_blank" class="btn">Discord</a>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="fade-in delay-5">
       <p>&copy; 2025 Ice Pack Team. Все права защищены.</p>
     </footer>
   </div>
