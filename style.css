@@ -1,1 +1,129 @@
-<-- стиль из предыдущего ответа, пропущен здесь для краткости -->
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  background-color: #1b1129;
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+
+/* Центровка и отступы */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Хедер */
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #3e1f59, #2a1143);
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 20px rgba(131, 69, 255, 0.3);
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #c084fc;
+  margin-bottom: 10px;
+}
+
+header .ip {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+/* Кнопки */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px 5px;
+  background-color: #7e22ce;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(126, 34, 206, 0.3);
+}
+
+.btn:hover {
+  background-color: #9333ea;
+  transform: scale(1.05);
+}
+
+.connect {
+  background-color: #22c55e;
+}
+
+.connect:hover {
+  background-color: #16a34a;
+}
+
+.btn.vk {
+  background-color: #5865f2;
+}
+
+.btn.discord {
+  background-color: #8b5cf6;
+}
+
+/* Блоки */
+section {
+  background-color: #28153d;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(131, 69, 255, 0.15);
+}
+
+section h2 {
+  margin-top: 0;
+  color: #c084fc;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: '•';
+  color: #c084fc;
+  margin-right: 8px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Футер */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 40px;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .social-buttons {
+    flex-direction: column;
+  }
+}
