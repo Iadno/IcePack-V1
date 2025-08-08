@@ -11,6 +11,7 @@ body {
   align-items: center;
   min-height: 100vh;
   overflow-x: hidden;
+  user-select: none;
 }
 
 .container {
@@ -54,13 +55,23 @@ header h1 {
   transform: translateY(-2px);
 }
 
-.about, .links {
+.about, .links, .features, .contacts {
   margin-top: 2rem;
   animation: fadeInUp 1s ease forwards;
 }
 
-.about h2, .links h2 {
+.about h2, .links h2, .features h2, .contacts h2 {
   color: #e0aaff;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  padding: 10px 0;
+  font-size: 1.1rem;
 }
 
 footer {
