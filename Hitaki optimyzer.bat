@@ -23,7 +23,7 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 @echo off
-title Ice Pack V1
+title Hitaki optimyzer
 ::Disable UAC
 Reg.exe ADD "HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v "EnableLUA" /t REG_DWORD /d "0" /f > nul
 
@@ -53,7 +53,7 @@ echo.
 echo.
 echo.
 
-echo.       %f%%w%                                              Ice Pack V1
+echo.       %f%%w%                                              Hitaki optimyzer
 echo.       %f%%w%
 echo.       %f%%w%
 echo.       %f%%w%                                                                                                                  %f%
@@ -328,5 +328,6 @@ cls
 echo.                                                   %f%%w% На доработке
 pause
 goto menu 
+
 
  
